@@ -16,7 +16,6 @@
 
 -----------
 
-
 ## With that in mind , let's containerize our application by first building a docker image with the dockerfile as such:
 
     docker build -t <myimage> .
