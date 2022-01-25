@@ -1,0 +1,34 @@
+# Question 2 item i
+
+After downloading all accessions sequences in fasta format,
+I have produced the file (alignment_influenza.msf) in this directory, using CLUSTAL omega, through
+this link:
+
+https://www.ebi.ac.uk/Tools/msa/clustalo/
+
+Step 1. I chose DNA 
+Step 2. Chose as output the msf file format
+
+The command that CLUSTALO used internally is the following:
+
+$APPBIN/clustal-omega-1.2.4/bin/clustalo --infile clustalo-I20211111-155156-0709-82483390-p1m.upfile --threads 8 --MAC-RAM 8000 --verbose --guidetree-out clustalo-I20211111-155156-0709-82483390-p1m.dnd --outfmt msf --outfile clustalo-I20211111-155156-0709-82483390-p1m.msf --output-order tree-order --seqtype dna
+
+
+
+# Question 2 item ii
+
+Since this part asks explicitly for conserved regions relative to NC_026431.1,
+I do not believe CLUSTALO has the feature to use a particular sequence as the "reference/anchor",
+therefore I decided to use MAFFT version 7 through this link:
+
+https://mafft.cbrc.jp/alignment/server/add_fragments.html?frommanualnov6
+
+In the first box goes the reference sequence (NC_026431.1) and in the second the other sequences.
+
+The internal command which I used is the following:
+
+mafft --thread 12 --reorder --anysymbol --maxambiguous 0.05 --addfragments fragments --auto input > output
+
+Here is an explanation on their website of why sometimes it's useful to align to a reference:
+
+When the input data set is large and the sequences are very closely related (% identity ∼ 99), it's sometimes useful to align all sequences just to a reference to build a full MSA.  Time complexity is O(N L log L), where N is the number of sequences and L is sequence length.

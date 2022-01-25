@@ -1,0 +1,11 @@
+GENEINFO	3_prime_UTR_variant	5_prime_UTR_variant	frameshift_variant	inframe_deletion	inframe_indel	inframe_insertion	intron_variant	missense_variant	no_sequence_alteration	non-coding_transcript_variant	nonsense	splice_acceptor_variant	splice_donor_variant	synonymous_variant
+ALOX5AP	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+ATP8A2	0	0	5	0	0	0	0	4	0	0	5	3	5	0
+B3GLCT	0	0	0	0	0	0	5	2	0	0	1	0	0	4
+BRCA2	17	6	763	43	4	6	245	2023	1	0	357	33	33	663
+FLT3	0	0	0	0	0	0	2	29	0	8	0	0	0	0
+PDX1	0	0	0	0	0	0	0	7	0	0	0	0	0	2
+POLR1D	0	0	2	0	0	0	0	3	0	0	1	0	0	2
+POMP	0	0	2	0	0	0	1	0	0	0	0	0	0	1
+RNF6	0	0	0	0	0	0	0	3	0	0	0	0	0	0
+RPL21	0	0	0	0	0	0	1	0	0	0	0	0	0	0
