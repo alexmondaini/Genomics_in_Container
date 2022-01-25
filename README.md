@@ -14,6 +14,8 @@
 2. For all the ClinVar variants that are located in this region: chr13:26000000-36000000, get the number of the variants with key: CLNSIG is “Pathogenic” or “Likely_pathogenic” or “Pathogenic/Likely_pathogenic” for each gene (key:GENEINFO in INFO section of vcf file) and each molecular consequence (key:MC in INFO section of vcf file).
 3. For all the ClinVar variants that are located in the target region file (grch37.testregion.bed), generate a similar table as in Objective 2, and identify the major differences between them.
 
+-----------
+
 
 ## With that in mind , let's containerize our application by first building a docker image with the dockerfile as such:
 
@@ -44,7 +46,7 @@ Then run the docker image:
 
     vim parse_vcf.py
 
-### In brief parse_vcf will generate a dictionary in python of keys coming from the info field for the regions of insterest and, will then from this dictionart create a dataframe of counts of each type of variant
+### In brief parse_vcf will generate a dictionary in python of keys coming from the info field for the regions of insterest and, will then from this dictionary create a dataframe of counts of each type of variant
 
 ### Finally for question 3 the same logic applies and parse_vcf.py is reusable since the code is flexible enough to adapt to minor changes between the different files, therefore to generate results for question 3 simply use the following command:
 
