@@ -7,7 +7,7 @@ FROM ubuntu:${UBUNTU_VER}
 # Copy clinvar and parse_vcf.py to directory called /mydir/
 COPY . /mydir/
 # System packages
-RUN apt-get update && apt-get install -yq curl wget jq vim nano bedtools
+RUN apt-get update && apt-get install -yq curl wget jq vim nano bedtools openjdk-11-jdk
 SHELL ["/bin/bash", "-c"]
 # Use the above args 
 ARG CONDA_VER
