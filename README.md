@@ -1,7 +1,7 @@
 ## This is a general exercise in genomics where I have analyzed variant(vcf) and bed files to get their summary statistics and parse vcfs in order to detect the frequency of  annotated labels denoted in variant files with a python dictionary structure.
 
 
-## Let's get started by asking some questions about about bed/vcf files that are located in this repo:
+## Let's get started by asking some questions about bed/vcf files that are located in this repo:
 
 ### Get the summary statistics of the ClinVar variants on target regions.
 **Input**: 
