@@ -8,7 +8,7 @@
 1. a target file (.bed format) contains multiple regions from chr13:26000000-36000000 of human reference genome GRCh37 (hg19): grch37.testregion.bed
 2. Refseq exon list file (.bed format) for all human coding genes, the position is also based on GRCh37: grch37.exon_info_refseq.bed
 
-### For variant input file __*clinvar.vcf.gz*__ derive the following objectices:
+### For variant input file __*clinvar.vcf.gz*__ derive the following objectives:
 
 1. For all genes located in chr13:26000000-36000000, get the summary statistics of the target file coverage. (For each gene, get the fraction of exonic bases that was covered by the target file)
 2. For all the ClinVar variants that are located in this region: chr13:26000000-36000000, get the number of the variants with key: CLNSIG is “Pathogenic” or “Likely_pathogenic” or “Pathogenic/Likely_pathogenic” for each gene (key:GENEINFO in INFO section of vcf file) and each molecular consequence (key:MC in INFO section of vcf file).
